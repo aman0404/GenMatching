@@ -30,15 +30,15 @@ DeltaPtCutValue 	   50.0   1000.0
 DiscrByDeltaR  1
 DeltaRCut      0.3 
 
-DiscrByOSLSType  None
+DiscrByOSLSType  OS
 DiscrByCosDphi	 0
 CosDphiCut 	 -1.00   -0.95
 
 DiscrByCosDphi_DeltaPtAndMet   false
 CosDphi_DeltaPtMetCut  0.8  1.0
 
-DiscrByMassReco  None
-HowCalculateMassReco NONE   ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+DiscrByMassReco  true
+HowCalculateMassReco InvariantMass   ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
 MassCut          60.0   120.0
 
 DiscrByCDFzeta2D          0

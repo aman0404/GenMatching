@@ -13,10 +13,10 @@ EnergyScaleOffset 1.
 EnergySigmaOffset 1.
 
 MatchToGen 0
-GenMatchingDeltaR 0.3
+GenMatchingDeltaR 0.4
 UseMotherID 0
 MotherID 23.0
-doEfficiencyPlots false
+doEfficiencyPlots true
 
 ////////////////////////////////
              Muon1
@@ -24,18 +24,16 @@ doEfficiencyPlots false
 
 //----RECO CUTS----//
 
-EtaCut 2.1
-PtCut 35.0 9999.9
+EtaCut 2.4
+PtCut 30.0 9999.9
 
 DoDiscrByTightID 1
 DoDiscrBySoftID 0
 
 DoDiscrByIsolation 1
-IsoSumPtCutValue 0.0	0.15
+IsoSumPtCutValue 0.0 0.15
 
 //----MET TOPOLOGY CUTS----//
-
-BadCut false
 
 DiscrIfIsZdecay 0
 
@@ -43,7 +41,7 @@ DiscrByMetDphi 0
 MetDphiCut 1.0 3.15
 
 DiscrByMetMt 0
-MetMtCut 150. 9999.
+MetMtCut 0. 100.
 
 ////////////////////////////////
              Muon2
@@ -51,21 +49,21 @@ MetMtCut 150. 9999.
 
 //----RECO CUTS----//
 
-EtaCut 2.1
-PtCut 35.0 9999.9
+EtaCut 2.4
+PtCut 30.0 9999.9
 
 DoDiscrByTightID 1
 DoDiscrBySoftID 0
 
 DoDiscrByIsolation 1
-IsoSumPtCutValue 0.0	0.15
+IsoSumPtCutValue 0.0 0.15
 
 //----MET TOPOLOGY CUTS----//
 
 DiscrIfIsZdecay 0
 
 DiscrByMetDphi 0
-MetDphiCut 1.00 3.15
+MetDphiCut 1.0 3.15
 
 DiscrByMetMt 0
-MetMtCut 150. 9999.
+MetMtCut 0. 100.

@@ -1,38 +1,9 @@
-######################################
-          Muon1Jet1
-#####################################
+################################
+         Muon1Tau1
+#############################
 
 DiscrByDeltaR  1
-DeltaRCut      0.5 
-
-DiscrByOSEta     false
-
-DiscrByCosDphi	  true
-CosDphiCut 	 -1.00	-0.70
-
-DiscrByCosDphi_DeltaPtAndMet   false
-CosDphi_DeltaPtMetCut  0.8  1.0
-
-DiscrByMassReco  0
-HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
-MassCut          0.0   999999.
-
-DiscrByCDFzeta2D          0
-PZetaCutCoefficient       1.0
-PZetaVisCutCoefficient    -3.1
-CDFzeta2DCutValue         -50.0    1000
-
-DiscrByDeltaPtDivSumPt     0
-DeltaPtDivSumPtCutValue    0.1  1.0
-DiscrByDeltaPt 		   0
-DeltaPtCutValue 	   30.0   1000.0
-
-#########################################
-             Muon1Jet2
-#########################################
-
-DiscrByDeltaR  1
-DeltaRCut      1.0 
+DeltaRCut      0.3 
 
 DiscrByOSLSType  0
 DiscrByCosDphi	 0
@@ -42,7 +13,7 @@ DiscrByCosDphi_DeltaPtAndMet   false
 CosDphi_DeltaPtMetCut  0.8  1.0
 
 DiscrByMassReco  0
-HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+HowCalculateMassReco none     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
 MassCut          0.0   200.0
 
 DiscrByCDFzeta2D          0
@@ -55,12 +26,12 @@ DeltaPtDivSumPtCutValue    0.1  1.0
 DiscrByDeltaPt 		   0
 DeltaPtCutValue 	   30.0   1000.0
 
-#########################################
-             Muon2Jet1
-#########################################
+###############################
+           Muon1Tau2
+##############################
 
 DiscrByDeltaR  1
-DeltaRCut      1.0 
+DeltaRCut      0.3 
 
 DiscrByOSLSType  0
 DiscrByCosDphi	 0
@@ -70,7 +41,7 @@ DiscrByCosDphi_DeltaPtAndMet   false
 CosDphi_DeltaPtMetCut  0.8  1.0
 
 DiscrByMassReco  0
-HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+HowCalculateMassReco none     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
 MassCut          0.0   200.0
 
 DiscrByCDFzeta2D          0
@@ -83,12 +54,12 @@ DeltaPtDivSumPtCutValue    0.1  1.0
 DiscrByDeltaPt 		   0
 DeltaPtCutValue 	   30.0   1000.0
 
-#########################################
-            Muon2Jet2
-#########################################
+####################################
+              Muon2Tau1
+###################################
 
 DiscrByDeltaR  1
-DeltaRCut      1.0 
+DeltaRCut      0.3 
 
 DiscrByOSLSType  0
 DiscrByCosDphi	 0
@@ -98,7 +69,7 @@ DiscrByCosDphi_DeltaPtAndMet   false
 CosDphi_DeltaPtMetCut  0.8  1.0
 
 DiscrByMassReco  0
-HowCalculateMassReco None     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+HowCalculateMassReco none     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
 MassCut          0.0   200.0
 
 DiscrByCDFzeta2D          0
@@ -111,3 +82,30 @@ DeltaPtDivSumPtCutValue    0.1  1.0
 DiscrByDeltaPt 		   0
 DeltaPtCutValue 	   30.0   1000.0
 
+#########################
+        Muon2Tau2
+########################
+
+DiscrByDeltaR  1
+DeltaRCut      0.3 
+
+DiscrByOSLSType  0
+DiscrByCosDphi	 0
+CosDphiCut 	 -1.00   -0.95
+
+DiscrByCosDphi_DeltaPtAndMet   false
+CosDphi_DeltaPtMetCut  0.8  1.0
+
+DiscrByMassReco  0
+HowCalculateMassReco none     ###VectorSumOfVisProductsAndMet   or    CollinearApprox 
+MassCut          0.0   200.0
+
+DiscrByCDFzeta2D          0
+PZetaCutCoefficient       1.0
+PZetaVisCutCoefficient    -3.1
+CDFzeta2DCutValue         -50.0    1000
+
+DiscrByDeltaPtDivSumPt     0
+DeltaPtDivSumPtCutValue    0.1  1.0
+DiscrByDeltaPt 		   0
+DeltaPtCutValue 	   30.0   1000.0

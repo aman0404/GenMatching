@@ -3,30 +3,36 @@
 ####################################
 
 CalculatePUSystematics true
-DataHistos PileUpReweighting2017.root  
-MCHistos mc2017_pileup_Dec2018reReco.root
+DataHistos PileUpReweighting2016.root       # 2016: PileUpReweighting2016.root, 2017: PileUpReweighting2017.root, 2018: PileUpReweighting2018.root
+MCHistos mc2016_pileup_Dec2018reReco.root   # 2016: mc2016_pileup_Dec2018reReco.root, 2017: mc2017_pileup_Dec2018reReco.root, 2018: 2016: mc2018_pileup_Dec2018reReco.root
 DataPUHistName pileup
 MCPUHistName pileup
 
 SpecialMCPUCalculation false
-SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
-/// SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
-/// SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_dynlo_incl.root
+#SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
+# SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
 
 ApplyTauIDSF false
+TauIdSFsByDM false # Tau ID scale factors that are decay mode (DM) - dependent. If using di-tau triggers and tau-pt > 40 GeV, these are the recommended SFs.
+TauSFforEmbeddedSamples false
+
+ApplyTauAntiEleSF false
+ApplyTauAntiMuSF false
+
 UsePileUpWeight true
 ApplyZBoostSF false
 
 isData false
 ApplyGenWeight  true
 
+ApplyHEMVeto2018 false
+
 /// ------ Data-specific cuts ------///
 FilterDataByGoldenJSON true
-ApplyHEMVeto2018 false
 
 /// ------ MC Gen-level cuts ------///
 /// --- HT filter --- ///
-DiscrByGenHT false
+DiscrByGenHT  false
 LowerGenHtCut 0.0
 UpperGenHtCut 100.0
 
@@ -36,9 +42,9 @@ GenDilepMassRange 80.0 100.0
 
 /// ------ Triggers ----- ///
 
-Trigger1FirstRequirement HLT_IsoMu27
-Trigger1SecondRequirement HLT_IsoMu27
-UseTriggerWildcard false
+Trigger1FirstRequirement HLT_IsoMu24
+Trigger1SecondRequirement HLT_IsoMu24
+UseTriggerWildcard  false
 
 /// Trigger2FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
 /// Trigger2SecondRequirement HLT_DoubleMediumIsoPFTau40_Trk1_eta2p1_Reg
@@ -46,10 +52,11 @@ UseTriggerWildcard false
 ///---Treat Muon as Neutrino---///
 
 TreatMuonsAsNeutrinos 0
+TreatOnlyOneMuonAsNeutrino 0
 TreatMuonsAsTaus 0
 
 ///-----MET cuts------///
-ApplyMetFilters true
+ApplyMetFilters false
 MT2Mass 0.
 DiscrByMet false
 MetCut 30.0 10000.0
@@ -61,7 +68,8 @@ HtCut 30.0
 
 JetPtForMhtAndHt 30.0        
 JetEtaForMhtAndHt 5.0        
-ApplyJetLooseIDforMhtAndHt false
+ApplyJetLooseIDforMhtAndHt true
+ApplyJetTightIDforMhtAndHt false
 
 /// --- MC selection --- ///
 InitializeMCSelection false
